@@ -1,0 +1,261 @@
+/*
+    Amarelo: #FFFF00
+    Cinza: #CCCC
+    Branco: #FFFFF
+    Preto: #00000
+*/
+header{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: left;
+    color: black;
+    
+}
+body{
+    background-color: #fadaf2 /*Cor do corpo da página*/
+}
+
+h1, h2, h3, h4, h5, h6{ /*Configura o estilo da fonte*/
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 13px;
+ 
+}
+
+section{
+    background-color: white; /*configura cor, tamanho e espaçamento das sections*/
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    text-align: justify;
+}
+
+footer{
+    background-color: transparent; /*Configura o rodapé*/
+    display: flex;
+    justify-content: center;
+
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+footer img{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+footer p{
+    display: flex; /* Alinha o texto e o ícone lado a lado */
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
+    font-size: 15px; /* Define o tamanho do texto */;
+}
+
+img, video{
+    max-width: 100%; /*Responsável pela responsividade em imagens e videos*/
+    align-items: center;
+}
+
+.p body, section{
+    text-align: justify;
+    text-decoration: none;
+    
+}
+
+nav{
+    height: 120px;
+    font-family: 'Times New Roman', Times, serif;
+
+    /*font-weight: bold; /*negrito*/
+    font-size: 21px;
+    text-align: center;
+    background-image: url('banner.png');
+    background-size: cover; /* Faz a imagem cobrir todo o menu */
+    background-position: center; /* Centraliza a imagem */
+    padding: 12px; /* Espaçamento interno do menu */  
+  
+    
+    
+}
+
+nav ul{
+    height: auto;
+    padding: 40px; /*distancia da borda*/
+    margin-right: 0px; /*tira as bolinhas da lista*/
+
+}
+
+nav li{
+    background-color: white;
+    display: inline; /*Alinha os itens do menu de navegação em linha*/
+    padding: 10px 10px 10px 10px;
+    margin: 30px; /*espaçamento entre os itens do menu*/
+    /*border: solid white 5px;*/
+    border-radius: 60px;
+}
+
+nav a{
+    text-decoration: none; /*Cor menu de navegação*/
+    color: black;
+    padding: 8px 8px 8px 8px;
+    
+}
+
+nav a:hover{ /*Efeito de destaque cor menu de navegação*/
+    color: black;
+    background-color: #fadaf2;
+    border-radius: 60px; /*espessura borda efeito;*/
+    padding: 8px 8px 8px 8px;
+   
+}
+
+@media all and (min-width:960px){ /*Estrutura condicional para avaliar tamanho do dispositivo, máxima exibição na tela*/
+    body{
+        width: 960px;
+        margin: auto;
+
+    }
+}
+
+@media all and (max-width:480px){ /*Estrutura condicional para avaliar tamanho do dispositivo, miníma exibição da tela*/
+    nav{
+        height: 100%;
+    }
+    nav li{
+        display:block;
+        padding: 10px;
+        margin: 0px;
+    }
+}
+
+div{
+   /* display: flex;*/
+    text-align: center;
+    list-style-type: none; /* Remove as bolinhas */
+    margin-left: 0;
+    padding: 10;
+}
+
+.minha-foto img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+
+}
+
+div .texto ul{
+    background-color: white; /*configura cor, tamanho e espaçamento das sections*/
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    list-style-type: none; /* Remove as bolinhas */
+    margin-left: 0;
+    padding: 20px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.foto-produto {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1; /* Mantém a imagem quadrada */
+    object-fit: cover;
+}
+
+.descricao {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: red;
+}
+.contato-form {
+    background-color: white; 
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #CCCC; /* Cor cinza das bordas */
+    border-radius: 10px;
+}
+
+.contato-form h2 {
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contato-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    color: black;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CCCC;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contato-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contato-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #fadaf2; 
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato-form button:hover {
+    background-color: #CCCC; /* Cinza ao passar o mouse */
+}
+
+.icones-sociais {
+    display: flex;
+    justify-content: center; /* Alinha os ícones no centro */
+    gap: 20px; /* Espaço entre os ícones */
+    margin-top: 20px;
+}
+
+.icones-sociais img {
+    width: 40px; /* Ajusta o tamanho dos ícones */
+    height: 40px;
+}
